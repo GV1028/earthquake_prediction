@@ -1,30 +1,23 @@
-# **Project Charter**
+# **Project Web Presence**
 
 ### Project Overview
 
-  Deep learning has recently contributed to learning state-of-the-art representations in service of various image recognition
-tasks. Deep learning uses cascades of many layers of nonlinear processing units for feature extraction and transformation. Recently, researchers have shown that deep learning architectures are particularly vulnerable to adversarial examples, inputs to machine learning models intentionally designed to cause the model to make a mistake (Goodfellow et al 2014). In this paper, we propose three methods for increasing the robustness of deep learning architectures against adversarial examples. Specifically, we propose a biologically inspired multi-task learning (MTL) model, a downsampling model, and a model trained on images created by the generator from a generative adversarial network. Our results show that using these models improve adversarial robustness against universal adversarial perturbations (Moosavi-Dezfooli et al 2016). Additionally, we present a metric for adversarial robustness and provide extensive analysis on how adversarial images are represented in image vector space. 
-
-### Project Approach
-
-  Adversarial images and adversarial inputs in general have been the subject of a number of papers. What causes adversarial images? How are they generated? Are certain networks more resilient to adversarial images than others and if so what does it mean to be resilient and how can we measure a networks resilience? The project aims to answer the questions what does it mean to be an adversarial input, how can we make a network more resilient to adversarial images, and how do we measure resilience. Measuring resilience in a closed form would involve mapping the classification spaces of a network, which may be possible but is out of the scope of our project. Instead we intend to develop a method for comparing the resilience of two networks. This would give us the ability to measure the effectiveness of our techniques for improving the resilience of a network. We intend to run experiments where we train two networks, one network that uses one of our proposed methods for increasing resilience and one standard network as a control. We can then compare the resilience of the two networks and if our modified networks is more resilient than the control we can backup or claim that this method improves resilience. 
+  Forecasting fault failure is a fundamental but elusive goal in earthquake science. Earthquakes have huge consequences on life, property and socio-economic balance in the world. In this project, we aim to apply Machine Learning and Deep Learning techniques to accurately predict the time of earthquakes. Using such techniques, we hope to come up with an ad-hoc prediction system, by discovering patterns in seismic data obtained from laboratory earthquakes. We hypothesize that deep learning would significantly advance current methods of earthquake prediction and provide new insights on fault physics.
 
 ### Project Goals (High Level)
 
-* To develop a method for measuring the robustness of a neural network against adversarial images.
+* To develop a method for predicting the time to failure for the next labaratory earthquakes.
 
-* To determine if the discriminator of a GAN can detect adversarial inputs.
+* To determine the potential of Deep Learning and Machine Learning techniques in finding patterns in seismic waves.
 
-* To determine if downsampling improves the robustness of a network
-
-* To determine if multi-task learning increases the robustness of a network
+* To develop an ad-hoc mechanism for predicting earthquakes quickly
 
 
 ### Risks and How to Avoid Them
 
     1. Risk - Our metric for adversarial robustness only measures robustness against a certain type of adversarial image. 
 
-    2. Mitigation - Define what we mean by robustness and prove that our metric actually measure that quality either absolutely or relative to other networks.    
+    2. Mitigation - Define what we mean by robustness and prove that our metric actually measure that quality either absolutely or relative to other networks.
 
     3. Risk - Writing code will take longer than expected.
 
