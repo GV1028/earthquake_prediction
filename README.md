@@ -4,6 +4,10 @@
 
   Forecasting fault failure is a fundamental but elusive goal in earthquake science. Earthquakes have huge consequences on life, property and socio-economic balance in the world. In this project, we aim to apply Machine Learning and Deep Learning techniques to accurately predict the time of earthquakes. Using such techniques, we hope to come up with an ad-hoc prediction system, by discovering patterns in seismic data obtained from laboratory earthquakes. We hypothesize that deep learning would significantly advance current methods of earthquake prediction and provide new insights on fault physics.
 
+### Project Approach
+
+The team members for this project are Chester Holtz and Vignesh Gokul. Both members have experience with machine learning. In particular, Vignesh has expertise in deep learning and neural network architectures. Earthquake prediction is a well-studied problem. However, there is a gap between the application traditional statistics-based modeling and modern machine learning-based methods. We plan to explore the application of a broad set of approaches and techniques from machine learning, statistics, and optimization. Some examples of our planned models include: deep neural networks (LSTM, CNN, Transformers), sparse quantile regression, and statistical modeling (Hawkes, Poisson). In addition to applying these techniques on the raw signal, we also plan to leverage our signal processing expertise with various pre-processing and analytical algorithms i.e. (robust pca, nonlinear manifold analysis, etc.). Our intent is to design algorithms that are effective for forecasting quakes, but also to make sure that they are efficient (fast, low footprint) enough to potentially run on embedded monitoring devices in the field. We will leverage a gold-standard synthetic & real dataset released by Los Alamos National Laboratory. The data is hosted here: https://www.kaggle.com/c/LANL-Earthquake-Prediction/data and consists of the raw acoustic waveform signal and other statistics.
+
 ### Project Goals (High Level)
 
 * To develop a method for predicting the time to failure for the next labaratory earthquakes.
@@ -15,33 +19,15 @@
 
 ### Risks and How to Avoid Them
 
-    1. Risk - Our metric for adversarial robustness only measures robustness against a certain type of adversarial image. 
-
-    2. Mitigation - Define what we mean by robustness and prove that our metric actually measure that quality either absolutely or relative to other networks.
-
-    3. Risk - Writing code will take longer than expected.
-
-    4. Mitigation - have modular goals that can be accomplished one by one. If we don’t try out all of our methods for improving robustness we will still have meaningful results.
-
-    5. Risk - The more experienced member of the team may start to resent the less experienced member of the team because they are contributing less to project. 
-
-    6. Mitigation - Talk about realistic expectations for each team member
-
-    7. Risk - The more experienced member of the team may not trust the less experienced member of the team and thus avoid delegating responsibilities to them. This could waste a valuable human resource and make the less experience team member feel under appreciated.
-
-    8. Mitigation - The more experienced team member should trust the less experienced team member initial until they have a working track record. 
-
-    9. Risk - Our method for comparing the robustness of two networks involves finding adversarial images that are adversarial to one network but not adversarial to the other. This may prove difficult than we anticipate. 
-
-    10. Mitigation - If cannot adversarial images prove more universal than we expect that is worthy talking about in and of itself.
+Earthquake prediction is not an easy task. In order to have realistic goals, we plan to start by predicting the time factor alone (Time before next earthquake) Since the data is very high-dimensional, one potential failure would be underfitting and not achieving convergence. We plan to explore models that can process high-dimensional signals with low processing power to overcome this aspect. We hope to formulate a schedule and that minimizes risk and guarantees deliverables while still leaving us with room for the exploration and development of more ambitious ideas.
 
 # Group Management
 
-  The team works together after class and has weekly meetings with the project advisor Alric Althoff. Because of exploratory nature of the project the development roles will continue to change throughout the quarter. We continue to come up with different ideas for how improve the robustness of a neural network. Individual team members will work on specific ideas. Each team will have autonomy when working on their own idea, but before an idea is pursued it will be questioned by the rest of the group. 
+We plan to make decisions by consensus and communicate via email and instant messages. For shared documents, we will utilize overleaf and google drive. For sharing code, we have set up a github repository and may consider leveraging a shared notebook in google colab. We plan to meet biweekly outside of class to review our progress and schedule. We planned our schedule in such a way that, we have some slack for every complex task. Missing out on milestone deadlines is possible and we try to accommodate that in our schedule. Specific details about who is responsible for which deliverables and milestones is given in the project schedule section.
 
 # Project Development
 
-  The project uses python and TensorFlow along with a variety of small open source software packages that be found on our requirements.txt file. We also make use of an AWS GPU for additional computational resources. None of the code requires the use of a GPU, but it does speed up the experiments. All of the code can be found on the project GitHub repository along with instructions on how to run it and how to replicate our experiments. 
+For this project, both members of the team plan to develop code. No additional hardware or software will be required. For computation, we have google compute credit and plan to leverage goole’s colab environment with GPU & deep learning accelerator support. Our primary development language will be in Python. Documentation will primarily be through the use of structured Jupyter notebooks which offer the capability to run Python code, generate plots, and render markdown-formatted text in a single document.
 
 # Project Schedule
 
