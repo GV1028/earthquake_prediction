@@ -1,5 +1,11 @@
 # **Project Web Presence**
 
+### Resources
+
+ - [Overview slides](https://docs.google.com/presentation/d/1tv60UObizPEKdWP9OjLOKzo52JgmWDXXSgYuL64NLa4/edit?usp=sharing)
+ - [Charter](https://docs.google.com/document/d/1lHkeGgkDBmYDifEetMcQI2ozJoaGlYd-FzCRXfv1fds/edit?usp=sharing)
+ - [References (to be added)]()
+
 ### Project Overview
 
   Forecasting fault failure is a fundamental but elusive goal in earthquake science. Earthquakes have huge consequences on life, property and socio-economic balance in the world. In this project, we aim to apply Machine Learning and Deep Learning techniques to accurately predict the time of earthquakes. Using such techniques, we hope to come up with an ad-hoc prediction system, by discovering patterns in seismic data obtained from laboratory earthquakes. We hypothesize that deep learning would significantly advance current methods of earthquake prediction and provide new insights on fault physics.
